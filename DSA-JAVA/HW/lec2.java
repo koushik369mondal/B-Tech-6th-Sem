@@ -13,10 +13,10 @@ public class lec2 {
     }
 
     public static void coneVolume(){
-        double pi = 3.14;
-        double r = 5;
-        double h = 6;
-        double v = pi * r * r * h / 3;
+        float pi = 3.14f;
+        float r = 4;
+        float h = 7;
+        float v = pi * r * r * h / 3;
         System.out.println("Volume of the cone: " + v);
     }
 
@@ -28,9 +28,17 @@ public class lec2 {
         System.out.println("Volume of the cylinder: " + v);
     }
 
+    public static void hemisphereVolume(){
+        double pi = 3.14;
+        double r = 5;
+        double v = (2.0/3.0) * pi * r * r * r;
+        System.out.println("Volume of the hemisphere: " + v);
+    }
+
     public static void main(String[] args) {
         // sumOdd();
         // coneVolume();
-        cylinderVolume();
+        // cylinderVolume();
+        hemisphereVolume();
     }
 }
