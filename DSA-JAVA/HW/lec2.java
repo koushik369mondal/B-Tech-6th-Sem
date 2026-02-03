@@ -13,9 +13,15 @@ public class lec2 {
     }
 
     public static void coneVolume(){
+        double pi = 3.14;
+        double r = 5;
+        double h = 6;
+        double v = pi * r * r * h / 3;
+        System.out.println("Volume of the cone: " + v);
     }
 
     public static void main(String[] args) {
-        sumOdd();
+        // sumOdd();
+        coneVolume();
     }
 }
