@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class lec2 {
     public static void add(){
         int x = 5;
@@ -15,7 +17,9 @@ public class lec2 {
     }
 
     public static void oddEven(){
-        int n = 7;
+        System.out.print("Enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
         if(n % 2 == 0){
             System.out.println("Even");
         } else {
@@ -48,8 +52,8 @@ public class lec2 {
     public static void main(String[] args) {
         // add();
         // simpleInterest();
-        // oddEven();
+        oddEven();
         // max();
-        grade();
+        // grade();
     }
 }
