@@ -13,8 +13,18 @@ public class lec2 {
         int si = (p * r * t) / 100;
         System.out.println(si);
     }
+
+    public static void oddEven(){
+        int n = 7;
+        if(n % 2 == 0){
+            System.out.println("Even");
+        } else {
+            System.out.println("Odd");
+        }
+    }
     public static void main(String[] args) {
         // add();
-        simpleInterest();
+        // simpleInterest();
+        oddEven();
     }
 }
