@@ -1,4 +1,4 @@
-public class raviSir {
+public class lec2 {
     public static void add(){
         int x = 5;
         int y = 6;
