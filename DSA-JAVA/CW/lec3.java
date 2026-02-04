@@ -1,5 +1,8 @@
 package CW;
 
+import java.util.Random;
+import java.util.Scanner;
+
 public class lec3 {
     public static void isLinear() {
         int x1 = 2;
@@ -20,7 +23,26 @@ public class lec3 {
             System.out.println("The points are not collinear");
         }
     }
+
+    public static void lotteryGame(){
+        System.out.print("Enter a number: ");
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        // int n = 400;
+        if(n >=300 && n <= 460){
+            System.out.println("Price : Mackbook");
+        } else if(n >= 200 && n <=280){
+            System.out.println("Price kurkure");
+        } else if(n >= 1100 && n <=1500 ){
+            System.out.println("Price : Cycle");
+        } else if( n > 50 && n <= 80){
+            System.out.println("Price: Bike");
+        } else{
+            System.out.println("Better Luck Next Time");
+        }
+    }
     public static void main(String[] args) {
-        isLinear();
+        // isLinear();
+        lotteryGame();
     }
 }
