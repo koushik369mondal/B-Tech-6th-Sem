@@ -1,7 +1,7 @@
 package CW;
 
 public class lec3 {
-    public static void main(String[] args) {
+    public static void isLinear() {
         int x1 = 2;
         int y1 = 3;
 
@@ -19,5 +19,8 @@ public class lec3 {
         } else {
             System.out.println("The points are not collinear");
         }
+    }
+    public static void main(String[] args) {
+        isLinear();
     }
 }
