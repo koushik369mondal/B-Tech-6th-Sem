@@ -101,21 +101,35 @@ public class lec4 {
         int space = 0;
         int star = n;
         int row = 1;
-        while (row <= n) {
+        // while (row <= n) {
+        //     // space
+        //     int i = 1;
+        //     while (i <= space) {
+        //         System.out.print("  ");
+        //         i++;
+        //     }
+        //     // star
+        //     int j = 1;
+        //     while (j <= star) {
+        //         System.out.print("* ");
+        //         j++;
+        //     }
+        //     System.out.println();
+        //     row++;
+        //     space++;
+        //     star--;
+        // }
+
+        for(int i=1; i<=n; i++){
             // space
-            int i = 1;
-            while (i <= space) {
+            for(int j=1; j<=space; j++){
                 System.out.print("  ");
-                i++;
             }
             // star
-            int j = 1;
-            while (j <= star) {
+            for(int j=1; j<=star; j++){
                 System.out.print("* ");
-                j++;
             }
             System.out.println();
-            row++;
             space++;
             star--;
         }
