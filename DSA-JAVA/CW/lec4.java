@@ -26,11 +26,22 @@ public class lec4 {
 
     public static void pattern2(){
         int n = 5;
-        for(int i=1; i<=n; i++){
-            for(int j=1; j<=i; j++){
+        // for(int i=1; i<=n; i++){
+        //     for(int j=1; j<=i; j++){
+        //         System.out.print("* ");
+        //     }
+        //     System.out.println();
+        // }
+
+        int row = 1;
+        while(row <= n){
+            int i = 1;
+            while(i <= row){
                 System.out.print("* ");
+                i++;
             }
             System.out.println();
+            row++;
         }
     }
 
