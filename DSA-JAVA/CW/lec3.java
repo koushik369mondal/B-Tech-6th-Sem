@@ -86,7 +86,7 @@ public class lec3 {
         int a = sc.nextInt();
         int d = 2;
         for(int i=1; i<=a; i++){
-            System.out.println(1 +(i-1)*d );
+            System.out.println(1 +(i-1)*d ); // formula
         }
     }
 
