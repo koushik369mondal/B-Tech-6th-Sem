@@ -61,8 +61,26 @@ public class patterns {
         }
     }
 
+    // * * * * *
+    // * * * *
+    // * * *
+    // * *
+    // *
+    public static void pattern3(){
+        int n = 5;
+
+        System.out.println("Using For Loop : ");
+        for(int i=n; i>=1; i--){ // it controls the number of rows - 5,4,3,2,1
+            for(int j=1; j<=i; j++){ // it controls the number of stars in each row - 5,4,3,2,1
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         // pattern1();
-        pattern2();
+        // pattern2();
+        pattern3();
     }
 }
