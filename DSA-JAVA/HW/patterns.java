@@ -31,7 +31,26 @@ public class patterns {
             row++;
         }
     }
+
+    // *
+    // * *
+    // * * *
+    // * * * *
+    // * * * * *
+    public static void pattern2(){
+        int n = 5;
+
+        System.out.println("Usinng For Loop");
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
-        pattern1();
+        // pattern1();
+        pattern2();
     }
 }
