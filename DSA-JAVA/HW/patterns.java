@@ -76,6 +76,18 @@ public class patterns {
             }
             System.out.println();
         }
+
+        System.out.println("Using While Loop : ");
+        int row = n;
+        while(row >= 1){
+            int i = 1;
+            while(i <= row){
+                System.out.print(" * ");
+                i++;
+            }
+            System.out.println();
+            row--;
+        }
     }
 
     public static void main(String[] args) {
