@@ -151,6 +151,25 @@ public class patterns {
             }
             System.out.println();
         }
+
+        System.out.println("Using While Loop : ");
+        int i = 1;
+        while(i<=n){
+            //space
+            int space = 0;
+            while(space<i){
+                System.out.print("   ");
+                space++;
+            }
+            //star
+            int star = 1;
+            while (star <= n-i+1) {
+                System.out.print(" * ");
+                star++;
+            }
+            System.out.println();
+            i++;
+        }
     }
 
     public static void main(String[] args) {
