@@ -206,7 +206,7 @@ public class lec4 {
         // pattern3();
         // pattern4();
         // pattern5();
-        // pattern6();
-        pattern7();
+        pattern6();
+        // pattern7();
     }
 }

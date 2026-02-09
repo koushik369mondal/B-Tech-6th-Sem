@@ -172,6 +172,18 @@ public class patterns {
         }
     }
 
+    // * * * * *
+    //     * * * *
+    //         * * *
+    //             * *
+    //                 *
+    public static void pattern6(){
+        int n = 5;
+
+        System.out.println("Using For Loop : ");
+        
+    }
+
     public static void main(String[] args) {
         // pattern1();
         // pattern2();
