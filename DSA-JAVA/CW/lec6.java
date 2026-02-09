@@ -12,13 +12,13 @@ public class lec6 {
     public static void pattern1() {
         int n = 5;
 
-        // System.out.println("Using For Loop : ");
-        // for(int i=1; i<=n; i++){
-        // for(int j=1; j<=i; j++){
-        // System.out.print(" * ");
-        // }
-        // System.out.println();
-        // }
+        System.out.println("Using For Loop : ");
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
 
         System.out.println("Using While Loop : ");
         int row = 1;
@@ -40,7 +40,50 @@ public class lec6 {
         }
     }
 
+    //         *
+    //       * *
+    //     * * *
+    //   * * * *
+    // * * * * *
+    //   * * * *
+    //     * * *
+    //       * *
+    //         *
+    public static void pattern2() {
+        int n = 5;
+
+        System.out.println("Using For Loop : ");
+
+        System.out.println("Using While Loop : ");
+        int space = n - 1;
+        int star = 1;
+        int row = 1;
+
+        while (row <= 2 * n - 1) {
+            int i = 1;
+            while (i <= space) {
+                System.out.print("   ");
+                i++;
+            }
+            int j = 1;
+            while (j <= star) {
+                System.out.print(" * ");
+                j++;
+            }
+            if (row < n) {
+                star++;
+                space--;
+            } else {
+                star--;
+                space++;
+            }
+            row++;
+            System.out.println();
+        }
+    }
+
     public static void main(String[] args) {
         pattern1();
+        pattern2();
     }
 }
