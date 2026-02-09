@@ -184,11 +184,144 @@ public class patterns {
         
     }
 
+    // * * * * *
+    // *       *
+    // *       *
+    // * * * * *
+    public static void pattern7(){}
+
+    //         *
+    //       * * *
+    //     * * * * *
+    //   * * * * * * *
+    // * * * * * * * * *
+    public static void pattern8(){}
+
+    // * * * * * * * * *
+    //   * * * * * * *
+    //     * * * * *
+    //       * * *
+    //         *
+    public static void pattern9(){}
+
+    //         *
+    //       *   *
+    //     *   *   *
+    //   *   *   *   *
+    // *   *   *   *   *
+    public static void pattern10(){}
+
+    //         *
+    //       * ! *
+    //     * ! * ! *
+    //   * ! * ! * ! *
+    // * ! * ! * ! * ! *
+    public static void pattern11(){}
+
+    // *                 *
+    // * *             * *
+    // * * *         * * *
+    // * * * *     * * * *
+    // * * * * * * * * * *
+    public static void pattern12(){}
+
+    // *               *
+    // * *           * *
+    // * * *       * * *
+    // * * * *   * * * *
+    // * * * * * * * * *
+    public static void pattern13(){}
+
+    // *
+    // * *
+    // * * *
+    // * * * *
+    // * * * * *
+    // * * * *
+    // * * *
+    // * *
+    // *
+    public static void pattern14(){}
+
+    //         *
+    //       * *
+    //     * * *
+    //   * * * *
+    // * * * * *
+    //   * * * *
+    //     * * *
+    //       * *
+    //         *
+    public static void pattern15(){}
+
+    //         * * * * *
+    //       * * * *
+    //     * * *
+    //   * *
+    // *
+    //   * *
+    //     * * *
+    //       * * *
+    //         * * * * *
+    public static void pattern16(){}
+
+    // * * * *  * * * *
+    // * * *      * * *
+    // * *          * *
+    // *              *
+    //
+    // *              *
+    // * *          * *
+    // * * *      * * *
+    // * * * *  * * * *
+    public static void pattern17(){}
+
+    //         1
+    //       2 2 2
+    //     3 3 3 3 3
+    //   4 4 4 4 4 4 4
+    // 5 5 5 5 5 5 5 5 5
+    public static void pattern18(){}
+
+    //                 1
+    //             2   3   4
+    //         5   6   7   8   9
+    //     10  11  12  13  14  15  16
+    // 17  18  19  20  21  22  23  24  25
+    public static void pattern19(){}
+
+    // *       * * * * *
+    // *       *
+    // *       *
+    // *       *
+    // * * * * * * * * *
+    //         *       *
+    //         *       *
+    //         *       *
+    // * * * * *       *
+    public static void pattern20(){}
+
+
     public static void main(String[] args) {
         // pattern1();
         // pattern2();
         // pattern3();
         // pattern4();
         pattern5();
+        // pattern6();
+        // pattern7();
+        // pattern8();
+        // pattern9();
+        // pattern10();
+        // pattern11();
+        // pattern12();
+        // pattern13();
+        // pattern14();
+        // pattern15();
+        // pattern16();
+        // pattern17();
+        // pattern18();
+        // pattern19();
+        // pattern20();
     }
 }
