@@ -431,7 +431,17 @@ public class patterns {
     // 1 2 3
     // 1 2 3 4
     // 1 2 3 4 5
-    public static void pattern22(){}
+    public static void pattern22(){
+        int n = 5;
+
+        System.out.println("Using For Loop : ");
+        for(int i = 1; i <= n; i++){
+            for(int j = 1; j <= i; j++){
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
 
 
     // 5 4 3 2 *
@@ -472,10 +482,10 @@ public class patterns {
         // pattern16();
         // pattern17();
         // pattern18();
-        pattern19();
+        // pattern19();
         // pattern20();
         // pattern21();
-        // pattern22();
+        pattern22();
         // pattern23();
         // pattern24();
     }
