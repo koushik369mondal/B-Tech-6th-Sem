@@ -79,11 +79,23 @@ public class lec8 {
         System.out.println("Reversed Number: " + reverse);
     }
 
+    public static void sumOfDigits(){
+        int n = 12345;
+        int sum = 0;
+        while(n > 0){
+            int rem = n%10;
+            sum += rem;
+            n = n/10;
+        }
+        System.out.println("Sum of Digits: " + sum);
+    }
+
     public static void main(String[] args) {
         // isPrime();
         // printPrimeNumbers();
         // fibonacci();
         // hcf();
-        reverseNumber();
+        // reverseNumber();
+        sumOfDigits();
     }
 }
