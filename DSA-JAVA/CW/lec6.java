@@ -1,3 +1,4 @@
+package CW;
 public class lec6 {
 
     // *

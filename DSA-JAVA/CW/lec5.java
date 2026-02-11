@@ -1,3 +1,4 @@
+package CW;
 import java.util.Scanner;
 
 public class lec5 {
