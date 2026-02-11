@@ -68,10 +68,22 @@ public class lec8 {
     public static void gcd(){}
 
 
+    public static void reverseNumber(){
+        int n = 12345;
+        int reverse = 0;
+        while(n > 0){
+            int rem = n%10;
+            reverse = reverse*10 + rem;
+            n = n/10;
+        }
+        System.out.println("Reversed Number: " + reverse);
+    }
+
     public static void main(String[] args) {
         // isPrime();
         // printPrimeNumbers();
         // fibonacci();
-        hcf();
+        // hcf();
+        reverseNumber();
     }
 }
