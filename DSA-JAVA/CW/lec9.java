@@ -71,6 +71,15 @@ public class lec9 {
         return sum;
     }
 
+    public static void simpleInterest1(int p, int r, int t){
+        double si = (p * r * t) / 100.0;
+        System.out.println(si);
+    }
+
+    public static int simpleInterest2(int p, int r, int t){
+        return (p * r * t) / 100;
+    }
+
     public static void main(String[] args) {      
         int n = 10;
 
@@ -96,5 +105,11 @@ public class lec9 {
 
         int sum = sumN2(n);
         System.out.println(sum);
+
+        int p = 1000, r = 5, t = 2;
+        simpleInterest1(p, r, t);
+        
+        int si = simpleInterest2(p, r, t);
+        System.out.println(si);
     }
 }
