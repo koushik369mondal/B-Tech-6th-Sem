@@ -209,6 +209,19 @@ public static void pattern8() {}
     public static void pattern9(){
         int n = 5;
 
+        System.out.println("Using For Loop : ");
+        for (int i=1; i<=n; i++){
+            //space
+            for(int space=1; space<=n-i; space++){
+                System.out.print("   ");
+            }
+            //star
+            for(int star = 1; star<=2*i-1; star++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+
         System.out.println("Using While Loop : ");
         int space = n - 1;
         int star = 1;
@@ -599,7 +612,7 @@ public static void pattern35(){}
         // pattern6();
         // pattern7();
         // pattern8();
-        // pattern9();
+        pattern9();
         // pattern10();
         // pattern11();
         // pattern12();
@@ -613,7 +626,7 @@ public static void pattern35(){}
         // pattern20();
         // pattern21();
         // pattern22();
-        pattern23();
+        // pattern23();
         // pattern24();
         // pattern25();
         // pattern26();
