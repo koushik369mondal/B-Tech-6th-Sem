@@ -90,6 +90,15 @@ public class lec9 {
         System.out.println(reverse);
     }
 
+    public static int reverseNumber2(int n){
+        int reverse = 0;
+        while(n > 0){
+            int r = n % 10;
+            reverse = reverse * 10 + r;
+            n = n / 10;
+        }
+        return reverse;
+    }
 
     public static void main(String[] args) {      
         int n = 10;
@@ -125,5 +134,8 @@ public class lec9 {
 
         int number = 12345;
         reverseNumber1(number);
+
+        int reversed = reverseNumber2(number);
+        System.out.println(reversed);
     }
 }
