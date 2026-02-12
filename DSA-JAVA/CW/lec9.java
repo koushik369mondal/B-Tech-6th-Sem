@@ -55,6 +55,14 @@ public class lec9 {
         }
     }
 
+    public static void sumN(int n){
+        int sum = 0;
+        for(int i=1; i<=n; i++){
+            sum += i;
+        }
+        System.out.println(sum);
+    }
+
     public static void main(String[] args) {      
         int n = 10;
 
@@ -72,8 +80,10 @@ public class lec9 {
 
         int c = 15;
         maxThree1(a, b, c);
-        
+
         int max = maxThree2(a, b, c);
         System.out.println(max);
+
+        sumN(n);
     }
 }
