@@ -100,11 +100,19 @@ public class lec9 {
         return reverse;
     }
 
-    public static void allEven(int n2){
+    public static void allEve1(int n2){
         for(int i=1; i<=n2; i++){
             if(i % 2 == 0){
                 System.out.print(i + " ");
             }
+        }
+    }
+
+    public static int allEve2(int i) {
+        if(i % 2 == 0){
+            return i;
+        } else {
+            return -1; 
         }
     }
 
@@ -147,6 +155,14 @@ public class lec9 {
         System.out.println(reversed);
 
         int n2 = 1000;
-        allEven(n2);
+        // allEve1(n2);
+
+        for(int i=1; i<=n2; i++){
+            int even = allEve2(i);
+            if(even != -1){
+                System.out.print(even + " ");
+            }
+        }
+        
     }
 }
