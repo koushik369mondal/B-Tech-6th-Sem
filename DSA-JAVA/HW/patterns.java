@@ -231,7 +231,18 @@ public class patterns {
 //          *
 //      *       *
 //  *               *
-public static void pattern8() {}
+public static void pattern8(int n) {
+    for(int i=1; i<=n; i++){
+        for(int j=1; j<=n ; j++){
+            if(i==j || i+j==6){
+                System.out.print(" * ");
+            } else {
+                System.out.print("   ");
+            }
+        }
+        System.out.println();
+    }
+}
 
 
     //         *
@@ -769,7 +780,7 @@ public static void pattern35(){}
         // pattern5();
         // pattern6();
         // pattern7();
-        // pattern8();
+        pattern8(5);
         // pattern9();
         // pattern10();
         // pattern11(5);
@@ -778,7 +789,7 @@ public static void pattern35(){}
         // pattern14();
         // pattern15();
         // pattern16(5);
-        pattern17(5);
+        // pattern17(5);
         // pattern18();
         // pattern19();
         // pattern20();
