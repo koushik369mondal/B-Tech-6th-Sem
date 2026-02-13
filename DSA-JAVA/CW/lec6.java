@@ -174,9 +174,9 @@ public class lec6 {
     }
 
     public static void main(String[] args) {
-        // pattern1();
+        pattern1();
         // pattern2();
         // pattern3();
-        pattern4();
+        // pattern4();
     }
 }
