@@ -401,8 +401,24 @@ public static void pattern8(int n) {
     // * *           * *
     // * * *       * * *
     // * * * *   * * * *
-    // * * * * * * * * *
-    public static void pattern14(){}
+    // * * * * * * * * * *
+    public static void pattern14(int n){
+        for(int i=1; i<=n; i++){
+            //star
+            for(int j=1; j<=i; j++){
+                System.out.print(" * ");
+            }
+            //space
+            for(int k=1; k<=(n-i)*2-1; k++){
+                System.out.print("   ");
+            }
+            //star
+            for(int j=1; j<=i; j++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
 
     // * * * * * * * * *
     // * * * *   * * * *
@@ -553,7 +569,24 @@ public static void pattern8(int n) {
     // * * *       * * *
     // * *           * *
     // *               *
-    public static void pattern20(){}
+    public static void pattern20(int n){
+        System.out.println("Using For Loop : ");
+        for(int i=1; i<=n; i++){
+            //star
+            for(int j=n; j>=i; j--){
+                System.out.print(" * ");
+            }
+            //space
+            for(int k=1; k<=(i-1)*2; k++){
+                System.out.print("   ");
+            }
+            // star
+            for (int j = n; j >= i; j--) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
 
     // * * * *   * * * *
     // * * *       * * *
@@ -842,13 +875,13 @@ public static void pattern35(){}
         // pattern11(n);
         // pattern12(n);
         // pattern13(n);
-        // pattern14();
+        // pattern14(n);
         // pattern15();
         // pattern16(n);
         // pattern17(n);
         // pattern18(n);
         // pattern19(n);
-        // pattern20();
+        pattern20(n);
         // pattern21();
         // pattern22();
         // pattern23();
@@ -865,5 +898,6 @@ public static void pattern35(){}
         // pattern34();
         // pattern35();
         // pattern36();
+        sc.close();
     }
 }
