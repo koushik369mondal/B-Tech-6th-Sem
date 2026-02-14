@@ -679,7 +679,39 @@ public static void pattern8(int n) {
     //      *               *
     //          *       *
     //              *
-    public static void pattern24(){}
+    public static void pattern24(int n){
+        System.out.println("Using For Loop : ");
+        for(int i=1; i<=n; i++){
+            // space
+            for(int space=1; space<=n-i; space++){
+                System.out.print("   ");
+            }
+            // stars
+            for(int stars = 1; stars<=2*i-1; stars++){
+                if(stars == 1 || stars == 2*i-1){
+                    System.out.print(" * ");
+                } else {
+                    System.out.print("   ");
+                }
+            }
+            System.out.println();
+        }
+        for(int i=n-1; i>=1; i--){
+            // space
+            for (int space = 1; space <= n - i; space++) {
+                System.out.print("   ");
+            }
+            // stars
+            for (int stars = 1; stars <= 2 * i - 1; stars++) {
+                if (stars == 1 || stars == 2 * i - 1) {
+                    System.out.print(" * ");
+                } else {
+                    System.out.print("   ");
+                }
+            }
+            System.out.println();
+        }
+    }
 
     //         1
     //       2 2 2
@@ -939,8 +971,8 @@ public static void pattern35(){}
         // pattern20(n);
         // pattern21(n);
         // pattern22(n);
-        pattern23(n);
-        // pattern24();
+        // pattern23(n);
+        pattern24(n);
         // pattern25(n);
         // pattern26(n);
         // pattern27(n);
