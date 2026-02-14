@@ -33,7 +33,30 @@ public class ass2 {
     // *  *  *  *  *  
     //    *  *  *
     //       *
-    public static void pattern3(){}
+    public static void pattern3(int n){
+        for(int i=1; i<=n; i++){
+            //space
+            for(int j=1; j<=n-i; j++){
+                System.out.print("   ");
+            }
+            //star
+            for(int k=1; k<=2*i-1; k++){
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+        for(int i=n-1; i>=1; i--){
+            // space
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print("   ");
+            }
+            // star
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
 
     // 1 
     // 2 3 
@@ -132,6 +155,8 @@ public class ass2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        pattern1(n);
+        // pattern1(n);
+        pattern3(n);
+        sc.close();
     }
 }
