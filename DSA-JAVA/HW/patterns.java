@@ -597,7 +597,38 @@ public static void pattern8(int n) {
     // * *           * *
     // * * *       * * *
     // * * * *   * * * *
-    public static void pattern21(){}
+    public static void pattern21(int n){
+        for(int i=1; i<=n; i++){
+            //star
+            for(int j=n; j>=i; j--){
+                System.out.print(" * ");
+            }
+            //space
+            for(int k=1; k<=(i-1)*2; k++){
+                System.out.print("   ");
+            }
+            // star
+            for (int j = n; j >= i; j--) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+        for(int i=1; i<=n; i++){
+            //star
+            for(int j=1; j<=i; j++){
+                System.out.print(" * ");
+            }
+            //space
+            for(int k=1; k<=(n-i)*2; k++){
+                System.out.print("   ");
+            }
+            // star
+            for (int j = 1; j <= i; j++) {
+                System.out.print(" * ");
+            }
+            System.out.println();
+        }
+    }
 
     // * * * * * * *
     // * * *   * * *
@@ -881,8 +912,8 @@ public static void pattern35(){}
         // pattern17(n);
         // pattern18(n);
         // pattern19(n);
-        pattern20(n);
-        // pattern21();
+        // pattern20(n);
+        pattern21(n);
         // pattern22();
         // pattern23();
         // pattern24();
