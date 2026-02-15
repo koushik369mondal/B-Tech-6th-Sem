@@ -79,7 +79,24 @@ public class ass2 {
     //   *   *
     //  *   *
     // *****
-    public static void pattern5(){}
+    public static void pattern5(int n){
+        for(int i=1; i<=n; i++){
+            //space
+            for(int j=1; j<=n-i; j++){
+                System.out.print(" ");
+            }
+            //star
+            for(int k=1; k<=n; k++){
+                if(i==1 || i==n || k==1 || k==n){
+                    System.out.print("*");
+                } else {
+                    System.out.print(" ");
+                }
+                
+            }
+            System.out.println();
+        }
+    }
 
     //     1 
     //   2 3 2 
@@ -167,7 +184,8 @@ public class ass2 {
         int n = sc.nextInt();
         // pattern1(n);
         // pattern3(n);
-        pattern4(n);
+        // pattern4(n);
+        pattern5(n);
         sc.close();
     }
 }
