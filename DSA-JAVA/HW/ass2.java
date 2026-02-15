@@ -127,7 +127,18 @@ public class ass2 {
     // 1 1 
     // 2 3 5 
     // 8 13 21 34
-    public static void pattern8(){}
+    public static void pattern8(int n){
+        int a = 0, b = 1;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                System.out.print(a + "\t");
+                int c = a + b;
+                a = b;
+                b = c;
+            }
+            System.out.println();
+        }
+    }
 
     // 1           1 
     // 1 2       2 1 
@@ -197,7 +208,8 @@ public class ass2 {
         // pattern3(n);
         // pattern4(n);
         // pattern5(n);
-        pattern7(n);
+        // pattern7(n);
+        pattern8(n);
         sc.close();
     }
 }

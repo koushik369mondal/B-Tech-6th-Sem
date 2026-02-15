@@ -1,10 +1,14 @@
 package Test;
 
+import java.util.Scanner;
+
 public class test {
 
+
     public static void main(String[] args) {
-        int n = 5;
-        // pattern1(n);
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        // pattern8(n);
     }
     
 }
