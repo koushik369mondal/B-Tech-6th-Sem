@@ -13,9 +13,9 @@ public class ass2 {
         for(int i=1; i<=n; i++){
             for(int j=1; j<=n; j++){
                 if(i==1 || i==n || j==1 || j==n || (i == j || j == n - i + 1) && !(i == mid && j == mid)){
-                    System.out.print(" * ");
+                    System.out.print("*\t");
                 } else {
-                    System.out.print("   ");
+                    System.out.print("\t");
                 }
             }
             System.out.println();
@@ -26,7 +26,7 @@ public class ass2 {
     //     2 3 2 
     //   3 4 5 4 3 
     // 4 5 6 7 6 5 4
-    public static void pattern2(){}
+    public static void pattern2(int n){}
 
     //          *
     //      *   *   *  
@@ -34,7 +34,7 @@ public class ass2 {
     //      *   *   *
     //          *
     public static void pattern3(int n){
-        int mid = n / 2 + 1;
+        int mid = (n + 1) / 2;
         for(int i=1; i<=mid; i++){
             // space
             for(int j=1; j<=mid-i; j++){
@@ -63,7 +63,16 @@ public class ass2 {
     // 2 3 
     // 4 5 6 
     // 7 8 9 10
-    public static void pattern4(){}
+    public static void pattern4(int n){
+        int count = 1;
+        for(int i=1; i<=n; i++){
+            for(int j=1; j<=i; j++){
+                System.out.print(count + "\t");
+                count++;
+            }
+            System.out.println();
+        }
+    }
 
     //     *****
     //    *   *
@@ -157,7 +166,8 @@ public class ass2 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         // pattern1(n);
-        pattern3(n);
+        // pattern3(n);
+        pattern4(n);
         sc.close();
     }
 }
