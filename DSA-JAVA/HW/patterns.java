@@ -617,12 +617,14 @@ public static void pattern8(int n) {
             for(int k=1; k<=(i-1)*2; k++){
                 System.out.print("   ");
             }
+            System.out.print(" ");
             // star
             for (int j = n; j >= i; j--) {
                 System.out.print(" * ");
             }
             System.out.println();
         }
+        System.out.println(" ");
         for(int i=1; i<=n; i++){
             //star
             for(int j=1; j<=i; j++){
@@ -632,6 +634,7 @@ public static void pattern8(int n) {
             for(int k=1; k<=(n-i)*2; k++){
                 System.out.print("   ");
             }
+            System.out.print(" ");
             // star
             for (int j = 1; j <= i; j++) {
                 System.out.print(" * ");
@@ -976,7 +979,23 @@ public static void pattern35(int n){
     //         *       *
     // * * * * *       *
     public static void pattern36(int n){
-        
+        int mid = (n + 1) / 2;
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                if ((i == 1 && j >= mid) || // top right
+                    (j == 1 && i <= mid) || // top left vertical
+                    (i == mid) || // middle horizontal
+                    (j == mid) || // middle vertical
+                    (i == n && j <= mid) || // bottom left
+                    (j == n && i >= mid) // bottom right vertical
+                ) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            System.out.println();
+        }
     }
 
     public static void main(String[] args) {
@@ -1016,8 +1035,8 @@ public static void pattern35(int n){
         // pattern32(n);
         // pattern33(n);
         // pattern34(n);
-        pattern35(n);
-        // pattern36();
+        // pattern35(n);
+        pattern36(n);
         sc.close();
     }
 }
