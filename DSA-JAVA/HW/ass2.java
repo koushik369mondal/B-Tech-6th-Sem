@@ -22,10 +22,10 @@ public class ass2 {
         }
     }
 
-    //       1 
-    //     2 3 2 
-    //   3 4 5 4 3 
-    // 4 5 6 7 6 5 4
+    //              1 
+    //          2   3   2 
+    //      3   4   5   4   3 
+    //  4   5   6   7   6   5   4
     public static void pattern2(int n){}
 
     //          *
@@ -164,7 +164,7 @@ public class ass2 {
     //     3 2 1       1 2 3 
     //         2 1   1 2 
     //             1
-    public static void pattern11(){}
+    public static void pattern11(int n){}
 
     // 1 
     // 1 1 
@@ -172,7 +172,7 @@ public class ass2 {
     // 1 3 3 1 
     // 1 4 6 4 1 
     // 1 5 10 10 5 1
-    public static void pattern12(){}
+    public static void pattern12(int n){}
 
     // 5                   5 
     // 5 4               4 5 
@@ -185,7 +185,7 @@ public class ass2 {
     // 5 4 3           3 4 5 
     // 5 4               4 5 
     // 5                   5
-    public static void pattern13(){}
+    public static void pattern13(int n){}
 
     // 5 4 3 2 1 0 1 2 3 4 5 
     //   4 3 2 1 0 1 2 3 4 
@@ -205,11 +205,15 @@ public class ass2 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         // pattern1(n);
+        // pattern2(n);
         // pattern3(n);
         // pattern4(n);
         // pattern5(n);
         // pattern7(n);
-        pattern8(n);
+        // pattern8(n);
+        // pattern11(n);
+        // pattern12(n);
+        pattern13(n);
         sc.close();
     }
 }
