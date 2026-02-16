@@ -19,15 +19,15 @@ public class lec10 {
     public static void findElement(){
         Scanner sc = new Scanner(System.in);
         int arr[] = new int[5];
-        int key = 0;
+        int target = 0;
         System.out.println("Enter 5 integers: ");
         for(int i=0; i<5; i++){
             arr[i] = sc.nextInt();
         }
         System.out.println("Enter the element to be searched: ");
-        key = sc.nextInt();
+        target = sc.nextInt();
         for(int i=0; i<5; i++){
-            if(arr[i] == key){
+            if(arr[i] == target){
                 System.out.println("Element found at index: " + i);
                 return;
             }
