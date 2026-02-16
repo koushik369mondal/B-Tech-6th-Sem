@@ -82,6 +82,7 @@ public class lec4 {
             System.out.println();
             row--;
         }
+        sc.close();
     }
 
     //         * 
@@ -113,6 +114,7 @@ public class lec4 {
             space--;
             star++;
         }
+        sc.close();
     }
 
     // * * * * * 
@@ -125,7 +127,7 @@ public class lec4 {
         int n = sc.nextInt();
         int space = 0;
         int star = n;
-        int row = 1;
+        // int row = 1;
         // while (row <= n) {
         // // space
         // int i = 1;
@@ -158,6 +160,7 @@ public class lec4 {
             space++;
             star--;
         }
+        sc.close();
     }
 
 

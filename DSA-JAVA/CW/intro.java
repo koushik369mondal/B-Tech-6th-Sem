@@ -1,5 +1,4 @@
 package CW;
-import java.util.*;
 
 import java.util.Scanner;
 
@@ -45,6 +44,7 @@ public class intro {
                 System.out.println("Result: Pass");
             }
         }
+        sc.close();
     }
 
     public static void main(String[] args) {

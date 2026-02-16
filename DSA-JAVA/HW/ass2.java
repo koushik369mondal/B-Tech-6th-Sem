@@ -492,10 +492,10 @@ public class ass2 {
         // pattern3(n);
         // pattern4(n);
         // pattern5(n);
-        pattern6(n);
+        // pattern6(n);
         // pattern7(n);
         // pattern8(n);
-        // pattern9(n);
+        pattern9(n);
         // pattern10(n);
         // pattern11(n);
         // pattern12(n);

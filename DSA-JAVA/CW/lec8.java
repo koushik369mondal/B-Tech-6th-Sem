@@ -18,6 +18,7 @@ public class lec8 {
         } else {
             System.out.println(n + " is not a prime number.");
         }
+        sc.close();
     }
 
 
@@ -36,6 +37,7 @@ public class lec8 {
                 System.out.print(i + " ");
             }
         }
+        sc.close();
     }
 
 
@@ -49,6 +51,7 @@ public class lec8 {
             a = b;
             b = c;
         }
+        sc.close();
     }
 
 

@@ -29,6 +29,7 @@ public class lec2 {
         } else {
             System.out.println("Odd");
         }
+        sc.close();
     }
 
     // Question 4 - Maximum of two numbers
@@ -72,6 +73,7 @@ public class lec2 {
         for(int i=1; i<=10; i++){
             System.out.println(n + " x " + i + " = " + (n * i));
         }
+        sc.close();
     }
 
     // Question 8 - Print all even numbers from 1 to n
@@ -84,6 +86,7 @@ public class lec2 {
                 System.out.print(i + " ");
             }
         }
+        sc.close();
     }
 
     // Question 9 - Sum of first n natural numbers
@@ -96,6 +99,7 @@ public class lec2 {
             sum = sum + i;
         }
         System.out.println("Sum: " + sum);
+        sc.close();
     }
 
     // Question 9 - Alternative - without loop
@@ -105,6 +109,7 @@ public class lec2 {
         int n = sc.nextInt();
         int sum = n * (n + 1) / 2;
         System.out.println("Sum: " + sum);
+        sc.close();
     }
 
     //Question 10 - Sum of first n odd numbers
@@ -119,6 +124,7 @@ public class lec2 {
             }
         }
         System.out.println("Sum: " + sum);
+        sc.close();
     }
 
     // Question 11 - Reverse a number

@@ -32,6 +32,7 @@ public class lec5 {
             space--;
             star += 2;
         }
+        sc.close();
     }
 
     // * * * * * * * * * 

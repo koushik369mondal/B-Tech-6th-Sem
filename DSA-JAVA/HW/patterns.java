@@ -935,7 +935,31 @@ public static void pattern8(int n) {
 //     3 4 5 6 7 8 9 0 9 8 7 6 5 4 3
 //   2 3 4 5 6 7 8 9 0 9 8 7 6 5 4 3 2
 // 1 2 3 4 5 6 7 8 9 0 9 8 7 6 5 4 3 2 1
-public static void pattern34(int n){}
+public static void pattern34(int n){
+    for(int i=1; i<=n; i++){
+        // spaces
+        for(int j=1; j<=(n-i)*2; j++){
+            System.out.print(" ");
+        }
+        
+        int start = n - i + 1;
+        if(start == n){
+            System.out.print("0");
+        } else {
+            // ascending numbers
+            for(int j=start; j<n; j++){
+                System.out.print(j % 10 + " ");
+            }
+            // center 0
+            System.out.print("0 ");
+            // descending numbers
+            for(int j=n-1; j>=start; j--){
+                System.out.print(j % 10 + " ");
+            }
+        }
+        System.out.println();
+    }
+}
 
 // 1 
 // 2 * 2 
@@ -952,7 +976,7 @@ public static void pattern35(int n){
             if(j%2 != 0){
                 System.out.print(i);
             } else {
-                System.out.print("*");
+                System.out.print(" * ");
             }
         }
         System.out.println();
@@ -962,7 +986,7 @@ public static void pattern35(int n){
             if (j % 2 != 0) {
                 System.out.print(i);
             } else {
-                System.out.print("*");
+                System.out.print(" * ");
             }
         }
         System.out.println();
@@ -982,11 +1006,12 @@ public static void pattern35(int n){
         int mid = (n + 1) / 2;
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
-                if ((i == 1 && j >= mid) || // top right
-                    (j == 1 && i <= mid) || // top left vertical
+                if (
                     (i == mid) || // middle horizontal
                     (j == mid) || // middle vertical
+                    (i == 1 && j >= mid) || // top right
                     (i == n && j <= mid) || // bottom left
+                    (j == 1 && i <= mid) || // top left vertical
                     (j == n && i >= mid) // bottom right vertical
                 ) {
                     System.out.print("* ");
@@ -1034,9 +1059,9 @@ public static void pattern35(int n){
         // pattern31(n);
         // pattern32(n);
         // pattern33(n);
-        // pattern34(n);
+        pattern34(n);
         // pattern35(n);
-        pattern36(n);
+        // pattern36(n);
         sc.close();
     }
 }

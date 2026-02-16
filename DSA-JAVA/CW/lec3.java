@@ -39,6 +39,7 @@ public class lec3 {
         } else{
             System.out.println("Better Luck Next Time");
         }
+        sc.close();
     }
 
     public static void lotteryGameAdvanace() {
@@ -77,6 +78,7 @@ public class lec3 {
         } else {
             System.out.println("Better Luck Next Time");
         }
+        sc.close();
     }
 
     public static void APSeries(){
@@ -87,6 +89,7 @@ public class lec3 {
         for(int i=1; i<=a; i++){
             System.out.println(1 +(i-1)*d ); // formula
         }
+        sc.close();
     }
 
     public static void main(String[] args) {
