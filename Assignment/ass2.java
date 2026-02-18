@@ -226,20 +226,28 @@ public class ass2 {
     // 1 2       2 1 
     // 1 2 3   3 2 1 
     // 1 2 3 4 3 2 1
-    public static void pattern9(int n){
-        for(int i=1; i<=n; i++){
-            // ascending numbers
-            for(int j=1; j<=i; j++){
-                System.out.print(j + " ");
+    public static void pattern9(int n) {
+        int space = n;
+        for (int row = 1; row <= n; row++) {
+            // left side
+            for (int i = 1; i <= row; i++) {
+                System.out.print(i + " ");
             }
-            // middle spaces
-            for(int j=1; j<=(n-i)*4-2; j++){
-                System.out.print(" ");
+            // middle space
+            for (int s = 1; s <= space * 2 - 3; s++) {
+                System.out.print("  ");
             }
-            // descending numbers
-            for(int j=(i==n ? i-1 : i); j>=1; j--){
-                System.out.print(j + " ");
+            // right side
+            if (row == n) {
+                for (int i = row - 1; i >= 1; i--) {
+                    System.out.print(i + " ");
+                }
+            } else {
+                for (int i = row; i >= 1; i--) {
+                    System.out.print(i + " ");
+                }
             }
+            space--;
             System.out.println();
         }
     }
@@ -487,7 +495,7 @@ public class ass2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        // pattern1(n);
+        pattern1(n);
         // pattern2(n);
         // pattern3(n);
         // pattern4(n);
@@ -499,7 +507,7 @@ public class ass2 {
         // pattern10(n);
         // pattern11(n);
         // pattern12(n);
-        pattern13(n);
+        // pattern13(n);
         // pattern14(n);
         sc.close();
     }

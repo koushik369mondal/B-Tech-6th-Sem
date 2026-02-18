@@ -1,4 +1,4 @@
-package CW;
+package CW.Day9;
 
 public class lec9 {
 

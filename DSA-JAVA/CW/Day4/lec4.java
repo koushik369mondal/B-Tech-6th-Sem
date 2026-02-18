@@ -1,4 +1,4 @@
-package CW;
+package CW.Day4;
 import java.util.Scanner;
 
 public class lec4 {

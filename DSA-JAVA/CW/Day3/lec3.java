@@ -1,4 +1,4 @@
-package CW;
+package CW.Day3;
 
 import java.util.Scanner;
 
