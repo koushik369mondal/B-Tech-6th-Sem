@@ -3,7 +3,7 @@ package CW;
 import java.util.Scanner;
 
 public class lec11 {
-    public static int arrayMax(int arr[]) {
+    public static void arrayMax(int arr[]) {
         int max = arr[0];
         for(int i=1; i<arr.length; i++){
             if(arr[i] > max){
@@ -11,7 +11,7 @@ public class lec11 {
             }
         }
         System.out.println(max);
-        return max;
+        // return max;
     }
     
     public static int arrayMin(int arr[]) {
@@ -45,6 +45,21 @@ public class lec11 {
         a = a ^ b;
         System.out.println("a: " + a + " b: " + b);
     }
+
+    public static void reverseArray(int arr[]){
+        int i = 0;
+        int j = arr.length - 1;
+        while(i<j){
+            int temp = arr[i];
+            arr[i] = arr[j];
+            arr[j] = temp;
+            i++;
+            j--;
+        }
+        for(int k=0; k<arr.length; k++){
+            System.out.print(arr[k] + " ");
+        }
+    }
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -52,14 +67,18 @@ public class lec11 {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
         }
-        System.out.println("Max: " + arrayMax(arr));
-        System.out.println("Min: " + arrayMin(arr));
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        swaptemp(a, b);
-        swapwithouttemp(a, b);
-        swapXOR(a, b);
+        // System.out.print("Max: ");
+        // arrayMax(arr);
+        // System.out.println("Min: " + arrayMin(arr));
+
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // swaptemp(a, b);
+        // swapwithouttemp(a, b);
+        // swapXOR(a, b);
+
+        reverseArray(arr);
 
         sc.close();
     }
