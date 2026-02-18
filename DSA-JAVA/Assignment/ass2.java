@@ -1,4 +1,4 @@
-package Assignment;
+
 import java.util.Scanner;
 public class ass2 {
     //  * * * * *
@@ -479,7 +479,7 @@ public class ass2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        pattern1(n);
+        // pattern1(n);
         // pattern2(n);
         // pattern3(n);
         // pattern4(n);
