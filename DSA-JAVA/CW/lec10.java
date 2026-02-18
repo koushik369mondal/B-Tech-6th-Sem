@@ -25,6 +25,7 @@ public class lec10 {
         for(int i=0; i<5; i++){
             arr[i] = sc.nextInt();
         }
+        sc.close();
         System.out.println("Enter the element to be searched: ");
         target = sc.nextInt();
         for(int i=0; i<5; i++){

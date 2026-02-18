@@ -1046,7 +1046,7 @@ public static void pattern35(int n){
         // pattern18(n);
         // pattern19(n);
         // pattern20(n);
-        // pattern21(n);
+        pattern21(n);
         // pattern22(n);
         // pattern23(n);
         // pattern24(n);
@@ -1059,7 +1059,7 @@ public static void pattern35(int n){
         // pattern31(n);
         // pattern32(n);
         // pattern33(n);
-        pattern34(n);
+        // pattern34(n);
         // pattern35(n);
         // pattern36(n);
         sc.close();
