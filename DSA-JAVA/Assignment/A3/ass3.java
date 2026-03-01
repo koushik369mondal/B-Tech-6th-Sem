@@ -230,6 +230,30 @@ public class ass3 {
     }
 
     // Conversion(Any To Any)
+    public static void anyToAny(){
+        Scanner sc = new Scanner(System.in);
+        int sb = sc.nextInt();
+        int db = sc.nextInt(); 
+        int sn = sc.nextInt(); 
+        int decimal = 0;
+        int power = 1;
+        while (sn > 0) {
+            int digit = sn % 10;
+            decimal += digit * power;
+            power *= sb;
+            sn /= 10;
+        }
+        int result = 0;
+        power = 1;
+        while (decimal > 0) {
+            int digit = decimal % db;
+            result += digit * power;
+            power *= 10;
+            decimal /= db;
+        }
+        System.out.println(result);
+        sc.close();
+    }
 
     // Boston Numbers
 
@@ -308,6 +332,7 @@ public class ass3 {
         // printArmstrongNums();
         // printSeries();
         // nthFibonacci();
-        fahrenheitToCelsius();
+        // fahrenheitToCelsius();
+        anyToAny();
     }
 }
