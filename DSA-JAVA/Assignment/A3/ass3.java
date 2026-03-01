@@ -165,6 +165,32 @@ public class ass3 {
     }
 
     // Print Armstrong Numbers
+    public static void printArmstrongNums(){
+        Scanner sc = new Scanner(System.in);
+        int N1 = sc.nextInt();
+        int N2 = sc.nextInt();
+        sc.close();
+        for(int i=N1; i<=N2; i++){
+            int num = i;
+            int digits = 0;
+            // Count digits
+            while(num > 0){
+                digits++;
+                num = num / 10; 
+            }
+            num = i; // Reset num to original value
+            int sum = 0; // Reset sum for each number
+            // Calculate Armstrong sum
+            while(num > 0){
+                int rem = num % 10;
+                sum += Math.pow(rem, digits);
+                num = num / 10;
+            }
+            if(sum == i){
+                System.out.println(i);
+            }
+        }
+    }
 
     // Conversion(Any To Any)
 
@@ -241,6 +267,7 @@ public class ass3 {
         // simpleInput();
         // chewbacca();
         // binaryToDecimal();
-        oddEvenDelhi();
+        // oddEvenDelhi();
+        printArmstrongNums();
     }
 }
