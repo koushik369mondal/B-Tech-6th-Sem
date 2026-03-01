@@ -178,8 +178,8 @@ public class ass3 {
                 digits++;
                 num = num / 10; 
             }
-            num = i; // Reset num to original value
-            int sum = 0; // Reset sum for each number
+            num = i; 
+            int sum = 0; 
             // Calculate Armstrong sum
             while(num > 0){
                 int rem = num % 10;
