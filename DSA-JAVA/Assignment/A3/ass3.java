@@ -118,6 +118,17 @@ public class ass3 {
     }
 
     // Conversion (Fahrenheit to Celsius)
+    public static void fahrenheitToCelsius(){
+        Scanner sc = new Scanner(System.in);
+        int min = sc.nextInt();
+        int max = sc.nextInt();
+        int step = sc.nextInt();
+        for (int f = min; f <= max; f += step) {
+            int c = (5 * (f - 32)) / 9; 
+            System.out.println(f + "\t" + c);
+        }
+        sc.close();
+    }
 
     // Check prime
     public static void checkPrime(){
@@ -296,6 +307,7 @@ public class ass3 {
         // oddEvenDelhi();
         // printArmstrongNums();
         // printSeries();
-        nthFibonacci();
+        // nthFibonacci();
+        fahrenheitToCelsius();
     }
 }
