@@ -20,6 +20,8 @@ public class Leet_278 {
     }
 
     public static void main(String[] args) {
-
+        Leet_278 obj = new Leet_278();
+        int n = 5;
+        System.out.println(obj.firstBadVersion(n));
     }
 }
