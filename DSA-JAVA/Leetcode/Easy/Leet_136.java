@@ -34,6 +34,15 @@ public class Leet_136 {
         return -1;
     }
 
+    // Optimized
+    public int singleNumber3(int[] nums) {
+        int result = 0;
+        for (int num : nums) {
+            result = result ^ num;
+        }
+        return result;
+    }
+
     public static void main(String[] args) {
         Leet_136 obj = new Leet_136();
         int[] nums = {2, 2, 1, 4, 4};
