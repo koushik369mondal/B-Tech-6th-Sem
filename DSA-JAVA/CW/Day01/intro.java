@@ -1,5 +1,5 @@
 // Online Intro class with Anand Sir
-package CW.Day1;
+package CW.Day01;
 
 import java.util.Scanner;
 

@@ -1,5 +1,5 @@
 // 5th February 2026
-package CW.Day4;
+package CW.Day04;
 import java.util.Scanner;
 
 public class lec4 {

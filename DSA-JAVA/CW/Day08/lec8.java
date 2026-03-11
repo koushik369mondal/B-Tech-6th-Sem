@@ -1,5 +1,5 @@
 // 11th February 2026
-package CW.Day8;
+package CW.Day08;
 import java.util.Scanner;
 
 public class lec8 {

@@ -1,5 +1,5 @@
 // 9th February 2026
-package CW.Day6;
+package CW.Day06;
 public class lec6 {
 
     // *

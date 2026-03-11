@@ -1,6 +1,6 @@
 // 3rd February 2026
 
-package CW.Day2;
+package CW.Day02;
 import java.util.Scanner;
 
 public class lec2 {
