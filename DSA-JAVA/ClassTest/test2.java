@@ -1,4 +1,4 @@
-package Test;
+package ClassTest;
 // import java.util.Scanner;
 
 public class test2 {
