@@ -8,7 +8,9 @@ public class ass4 {
         // inverseOfArray();
         // linearSearch();
         // reverseArray();
-        squaresOfSortedArray();
+        // squaresOfSortedArray();
+        // maxValueInArray();
+        targetSumPairs();
     }
 
     // Inverse of an array
@@ -50,7 +52,25 @@ public class ass4 {
         System.out.println(-1);
     }
 
-    // Arrays-Target Sum Pairs
+    // Arrays - Target Sum Pairs
+    public static void targetSumPairs() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int target = sc.nextInt();
+        Arrays.sort(arr); 
+        for (int i=0; i<n; i++) {
+            for (int j=i+1; j<n; j++) {
+                if (arr[i] + arr[j] == target) {
+                    System.out.println(arr[i] + " and " + arr[j]);
+                }
+            }
+        }
+        sc.close();
+    }
 
     // Arrays-Max Value In Array
     public static void maxValueInArray(){
