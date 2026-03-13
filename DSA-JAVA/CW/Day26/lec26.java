@@ -2,5 +2,5 @@
 package CW.Day26;
 
 public class lec26 {
-    // do assignments due to rain in class
+    // do assignments in class due to rain 
 }
