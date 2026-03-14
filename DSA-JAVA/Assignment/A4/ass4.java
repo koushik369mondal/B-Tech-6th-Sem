@@ -12,7 +12,8 @@ public class ass4 {
         // maxValueInArray();
         // targetSumPairs();
         // targetSumTriplets();
-        sortZeroesAndOnes();
+        // sortZeroesAndOnes();
+        bubbleSort();
     }
 
     // Inverse of an array
@@ -177,6 +178,27 @@ public class ass4 {
     // Calculate The Sum
 
     // Arrays-Bubble Sort
+    public static void bubbleSort(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i=0; i<n; i++) {
+            for (int j=0; j<n-1; j++) {
+                if (arr[j] > arr[j+1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
+                }
+            }
+        }
+        for (int i=0; i<n; i++) {
+            System.out.println(arr[i] + " ");
+        }
+        sc.close();
+    }
 
     // Maximum Sum Path in Two Arrays
 
