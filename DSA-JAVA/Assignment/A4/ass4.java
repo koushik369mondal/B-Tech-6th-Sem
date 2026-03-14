@@ -14,7 +14,8 @@ public class ass4 {
         // targetSumTriplets();
         // sortZeroesAndOnes();
         // bubbleSort();
-        selectionSort();
+        // selectionSort();
+        insertionSort();
     }
 
     // Inverse of an array
@@ -229,6 +230,27 @@ public class ass4 {
     }
 
     // Arrays-Insertion Sort
+    public static void insertionSort(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        for (int i=1; i<n; i++) {
+            int j = i;
+            while (j>0 && arr[j] < arr[j-1]) {
+                int temp = arr[j];
+                arr[j] = arr[j-1];
+                arr[j-1] = temp;
+                j--;
+            }
+        }
+        for (int i=0; i<n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        sc.close();
+    }
 
     // Maximum Circular Sum
 
