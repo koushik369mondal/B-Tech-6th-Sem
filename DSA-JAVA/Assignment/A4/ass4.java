@@ -20,7 +20,8 @@ public class ass4 {
         // majorityElement();
         // rainWaterTrapping();
         // maximumCircularSum();
-        runningSumOfArray();
+        // runningSumOfArray();
+        vonNeumanLovesBinary();
     }
 
     // Inverse of an array
@@ -341,6 +342,25 @@ public class ass4 {
     }
 
     // Von Neuman Loves Binary
+    public static void vonNeumanLovesBinary() {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        // while(t-- > 0)
+        // System.out.println(Integer.parseInt(sc.next(), 2));
+        for (int i = 0; i < t; i++) {
+            int binary = sc.nextInt();
+            int decimal = 0;
+            int power = 0;
+            while (binary > 0) {
+                int digit = binary % 10;
+                decimal += digit * Math.pow(2, power);
+                binary = binary / 10;
+                power++;
+            }
+            System.out.println(decimal);
+        }
+        sc.close();
+    }
 
     // Rain Water Trapping
     public static void rainWaterTrapping() {
