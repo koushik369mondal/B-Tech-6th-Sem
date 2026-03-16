@@ -21,7 +21,8 @@ public class ass4 {
         // rainWaterTrapping();
         // maximumCircularSum();
         // runningSumOfArray();
-        vonNeumanLovesBinary();
+        // vonNeumanLovesBinary();
+        pairOfRoses();
     }
 
     // Inverse of an array
@@ -122,6 +123,40 @@ public class ass4 {
     }
 
     // Pair of Roses
+    public static void pairOfRoses(){
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        for(int i=0; i<t; i++){
+            int n = sc.nextInt();
+            int[] arr = new int[n];
+            for(int j=0; j<n; j++){
+                arr[j] = sc.nextInt();
+            }
+            int money = sc.nextInt();
+            Arrays.sort(arr);
+            int left = 0; // left pointer
+            int right = n-1; // right pointer
+            int rose1 = 0;
+            int rose2 = 0;
+            while(left < right){
+                int sum = arr[left] + arr[right];
+                if(sum == money){
+                    rose1 = arr[left];
+                    rose2 = arr[right];
+                    left++;
+                    right--;
+                }
+                else if(sum < money){
+                    left++;
+                }
+                else {
+                    right--;
+                }
+            }
+            System.out.println("Deepak should buy roses whose prices are " + rose1 + " and " + rose2 + ".");
+        }
+        sc.close();
+    }
 
     // Help Ramu
 
