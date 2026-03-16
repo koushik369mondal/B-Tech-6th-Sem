@@ -22,7 +22,8 @@ public class ass4 {
         // maximumCircularSum();
         // runningSumOfArray();
         // vonNeumanLovesBinary();
-        pairOfRoses();
+        // pairOfRoses();
+        alexGoesShopping();
     }
 
     // Inverse of an array
@@ -161,6 +162,31 @@ public class ass4 {
     // Help Ramu
 
     // Alex Goes Shopping
+    public static void alexGoesShopping() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for (int i=0; i<n; i++) {
+            arr[i] = sc.nextInt();
+        }
+        int test = sc.nextInt(); 
+        for (int i=0; i<test; i++) {
+            int price = sc.nextInt(); 
+            int noOfItems = sc.nextInt(); 
+            int count = 0;
+            for (int j=0; j<n; j++) {
+                if (price % arr[j] == 0) {
+                    count++;
+                }
+            }
+            if (count >= noOfItems) {
+                System.out.println("Yes");
+            } else {
+                System.out.println("No");
+            }
+        }
+        sc.close();
+    }
 
     // Arrays-Reverse an Array
     public static void reverseArray(){
