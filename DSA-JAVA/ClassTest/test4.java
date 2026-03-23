@@ -7,12 +7,12 @@ public class test4 {
     public static void main(String[] args) {
         // rotate();
         // inverseOfArray();
-        // maxSum();
+        maxSum();
         // trappingRainWater();
         // productOfArrayExceptSelf();
         // findMedian();
         // runningSum();
-        rightShift();
+        // rightShift();
     }
 
     // rotate array by k times
@@ -67,7 +67,7 @@ public class test4 {
         for(int i=0; i<n; i++){
             arr[i] = sc.nextInt();
         }
-        int maxSum = Integer.MIN_VALUE;
+        int maxSum = 0;
         int currentSum = 0;
         for(int i=0; i<n; i++){
             currentSum = currentSum + arr[i];
