@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Hack2 {
     public static void main(String[] args) {
-        
+        monotonousArray();
     }
 
     
@@ -47,6 +47,33 @@ public class Hack2 {
     }
 
     // Monotonous array
+    public static void monotonousArray(){
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int arr[] = new int[n];
+        for(int i=0; i<n; i++){
+            arr[i] = sc.nextInt();
+        }
+        sc.close();
+        boolean inc=true;
+        boolean dec=true;
+        for (int i=0; i<n-1; i++) {
+            if(arr[i] > arr[i+1]){
+                inc=false;
+            }
+        }
+        for (int i = 0; i < n - 1; i++) {
+            if (arr[i] < arr[i + 1]) {
+                dec = false;
+            }
+        }
+        if(inc == false && dec == false){
+            System.out.println("False");
+        } else {
+            System.out.println("True");
+        }
+
+    }
 
     // rotate
 
