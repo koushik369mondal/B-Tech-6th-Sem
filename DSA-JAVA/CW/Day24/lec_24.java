@@ -57,7 +57,7 @@ public class lec_24 {
 
     // Binary Search in 2D Array
     public static void binarySearch() {
-
+        
     }
 
     public static void main(String[] args) {
