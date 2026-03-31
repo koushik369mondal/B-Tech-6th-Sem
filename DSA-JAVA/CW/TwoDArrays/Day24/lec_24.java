@@ -100,8 +100,8 @@ public class lec_24 {
         // TwoDArray(arr);
         // findMax(arr);
         // EvenOdd(arr);
-        linearSearch(arr);
-        binarySearch(arr);
+        // linearSearch(arr);
+        // binarySearch(arr);
         sc.close();
     }
 

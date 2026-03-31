@@ -14,16 +14,20 @@ public class lec_25 {
                 arr[i][j] = sc.nextInt();
             }
         }
+        System.out.println("Original Array: ");
         for(int i=0; i<n; i++){
             for(int j=0; j<m; j++){
                 System.out.print(arr[i][j] + " ");
             }
             System.out.println();
         }
-        wavePrint(arr);
+
+        // wavePrint(arr);
+        transpose(arr);
         sc.close();
     }
 
+    // wave print
     public static void wavePrint(int arr[][]){
         int n = arr.length;
         int m = arr[0].length;
@@ -39,4 +43,27 @@ public class lec_25 {
             }
         }
     }
+
+    // transpose of a matrix 
+    public static void transpose(int arr[][]){
+        int n = arr.length;
+        int m = arr[0].length;
+        int transpose[][] = new int[m][n];
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                transpose[j][i] = arr[i][j];
+            }
+        }
+        System.out.println("Transpose: ");
+        for(int i=0; i<n; i++){
+            for(int j=0; j<m; j++){
+                System.out.print(transpose[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    // spiral print
+
+    // multiplication
 }
