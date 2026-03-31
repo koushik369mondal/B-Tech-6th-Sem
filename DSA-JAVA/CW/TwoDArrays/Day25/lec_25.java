@@ -23,11 +23,12 @@ public class lec_25 {
         }
 
         // binarySearch(arr);
+        staircaseSearch(arr);
         // wavePrint(arr);
         // transpose(arr);
         // multiplication(arr);
         // spiralMatrix(arr);
-        sumOfOddEven(arr);
+        // sumOfOddEven(arr);
         sc.close();
     }
 
@@ -40,8 +41,8 @@ public class lec_25 {
         int high = n * m - 1;
         while (low <= high) {
             int mid = (low + high) / 2;
-            int i = mid / m;
-            int j = mid % m;
+            int i = mid / m; // row number
+            int j = mid % m; // column number
             if (arr[i][j] == target) {
                 System.out.println("Found at: (" + i + "," + j + ")");
                 return;
@@ -49,6 +50,26 @@ public class lec_25 {
                 low = mid + 1;
             } else {
                 high = mid - 1;
+            }
+        }
+        System.out.println("Not found");
+    }
+
+    // Staircase Search
+    public static void staircaseSearch(int arr[][]) {
+        int target = 4;
+        int n = arr.length;
+        int m = arr[0].length;
+        int i = 0; // start row
+        int j = m - 1; // start from top-right
+        while (i < n && j >= 0) {
+            if (arr[i][j] == target) {
+                System.out.println("Found at: (" + i + "," + j + ")");
+                return;
+            } else if (arr[i][j] < target) {
+                i++; // move down
+            } else {
+                j--; // move left
             }
         }
         System.out.println("Not found");
