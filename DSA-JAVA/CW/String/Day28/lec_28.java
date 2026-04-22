@@ -11,6 +11,10 @@ public class lec_28 {
         for(int ele : ch) {
             System.out.print(ele + " ");
         }
+        System.out.println();
+        for (char ele : ch) {
+            System.out.print(ele + " ");
+        }
     }
 
     public static void main(String[] args) {
