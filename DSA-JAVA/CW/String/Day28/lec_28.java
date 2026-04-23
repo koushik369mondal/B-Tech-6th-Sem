@@ -5,8 +5,8 @@ public class lec_28 {
 
     // frequancy of a String
 
-    // test
-    public static void test() {
+    // palindrome
+    public static void palindrome() {
         char[] ch = {'a', 'b', 'c', 'd', 'e'};
         for(int ele : ch) {
             System.out.print(ele + " ");
@@ -18,6 +18,6 @@ public class lec_28 {
     }
 
     public static void main(String[] args) {
-        test();
+        palindrome();
     }
 }
