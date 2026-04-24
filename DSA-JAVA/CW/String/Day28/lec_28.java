@@ -35,6 +35,11 @@ public class lec_28 {
         sc.close();
     }
 
+    // test4
+    public static void test4() {
+        
+    }
+
     public static void main(String[] args) {
         // test1();
         // test2();

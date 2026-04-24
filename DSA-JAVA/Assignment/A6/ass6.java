@@ -20,4 +20,28 @@ public class ass6 {
 		}
         sc.close();
     }
+
+    // Strings-String Compression
+    public static void stringCompression() {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        int n = s.length();
+        for (int i = 0; i < n; i++) {
+            int count = 1;
+            for (int j = i + 1; j < n; j++) {
+                if (s.charAt(i) == s.charAt(j)) {
+                    count++;
+                } else {
+                    break;
+                }
+            }
+            if (count > 1) {
+                System.out.print(s.charAt(i) + "" + count);
+            } else {
+                System.out.print(s.charAt(i));
+            }
+            i += (count - 1);
+        }
+        sc.close();
+    }
 }
