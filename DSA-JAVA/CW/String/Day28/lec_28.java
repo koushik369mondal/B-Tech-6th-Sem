@@ -35,14 +35,26 @@ public class lec_28 {
         sc.close();
     }
 
-    // test4
-    public static void test4() {
-        
+    // count the number of vowels in a string
+    public static void countVowels() {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int count = 0;
+        for(int i=0; i<s.length(); i++){
+            char ch = s.charAt(i);
+            if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
+                ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
+                count++;
+            }
+        }
+        System.out.println("Number of vowels: " + count);
+        sc.close();
     }
 
     public static void main(String[] args) {
         // test1();
         // test2();
-        test3();
+        // test3();
+        countVowels();
     }
 }

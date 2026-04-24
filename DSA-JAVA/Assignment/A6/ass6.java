@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class ass6 {
     public static void main(String[] args) {
-        canYouReadThis();
+        // canYouReadThis();
+        // stringCompression1();
+        // stringCompression2();
     }
 
     // Can You Read This?
