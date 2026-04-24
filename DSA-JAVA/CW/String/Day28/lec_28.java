@@ -17,7 +17,14 @@ public class lec_28 {
         }
     }
 
+    // test3
+    public static void test3() {
+        String s = "Hello I am Kaushik Mandal";
+        System.out.println(s);
+    }
+
     public static void main(String[] args) {
-        palindrome();
+        // palindrome();
+        test3();
     }
 }
