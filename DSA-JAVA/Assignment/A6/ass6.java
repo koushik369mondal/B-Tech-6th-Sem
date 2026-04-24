@@ -21,8 +21,27 @@ public class ass6 {
         sc.close();
     }
 
+    // String Compression
+    public static void stringCompression1() {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        for (int i = 0; i < s.length(); i++) {
+            int count = 1;
+            for (int j = i + 1; j < s.length(); j++) {
+                if (s.charAt(i) == s.charAt(j)) {
+                    count++;
+                } else {
+                    break;
+                }
+            }
+            System.out.print(s.charAt(i) + "" + count);
+            i += (count - 1); // i += 2
+        }
+        sc.close();
+    }
+
     // Strings-String Compression
-    public static void stringCompression() {
+    public static void stringCompression2() {
         Scanner sc = new Scanner(System.in);
         String s = sc.next();
         int n = s.length();
