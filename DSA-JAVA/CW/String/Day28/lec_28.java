@@ -132,6 +132,13 @@ public class lec_28 {
         sc.close();
     }
 
+    public static void subStringOfString() {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        System.out.println(s.substring(0, 4));
+        sc.close();
+    }
+
     public static void main(String[] args) {
         // test1();
         // test2();
@@ -143,6 +150,7 @@ public class lec_28 {
         // plus();
         // intToString();
         // countDigits();
-        stringToCharArray();
+        // stringToCharArray();
+        subStringOfString();
     }
 }
