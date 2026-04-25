@@ -100,7 +100,12 @@ public class lec_28 {
         String s1 = "Kaushik";
         String s2 = "Mandal";
         String s3 = s1 + s2;
+        s3 += 10;
+        s3 += "\n"; // do nothinng
+        s3 += "n in next line";
         System.out.println(s3);
+        System.out.println(10 + 20 + " Kaushik ");
+        System.out.println(10 + " Kaushik " + 20);
     }
 
     public static void main(String[] args) {
