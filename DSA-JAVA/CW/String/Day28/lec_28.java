@@ -135,7 +135,11 @@ public class lec_28 {
     public static void subStringOfString() {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
-        System.out.println(s.substring(0, 4));
+        for (int i=0; i<s.length(); i++) {
+            for (int j=i+1; j<=s.length(); j++) {
+                System.out.println(s.substring(i, j));
+            }
+        }
         sc.close();
     }
 
