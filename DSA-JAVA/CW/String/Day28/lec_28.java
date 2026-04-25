@@ -122,6 +122,16 @@ public class lec_28 {
         sc.close();
     }
 
+    public static void stringToCharArray() {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        char[] ch = s.toCharArray();
+        for (char i=0; i<ch.length; i++) {
+            System.out.print(ch[i] + " ");
+        }
+        sc.close();
+    }
+
     public static void main(String[] args) {
         // test1();
         // test2();
@@ -132,6 +142,7 @@ public class lec_28 {
         // compareTo("Kaushik", "Hello");
         // plus();
         // intToString();
-        countDigits();
+        // countDigits();
+        stringToCharArray();
     }
 }
