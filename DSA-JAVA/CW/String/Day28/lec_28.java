@@ -74,12 +74,18 @@ public class lec_28 {
         sc.close();
     }
 
+    // built in methods
+    public static void builtInMethods(){
+        String s1 = "kaushik";
+        System.out.println(s1.indexOf('k'));
+    }
 
     public static void main(String[] args) {
         // test1();
         // test2();
         // test3();
         // countVowels();
-        isPalindrome();
+        // isPalindrome();
+        builtInMethods();
     }
 }
