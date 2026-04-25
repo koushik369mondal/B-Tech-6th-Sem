@@ -85,14 +85,22 @@ public class lec_28 {
         // System.out.println(s1.toLowerCase());
         // System.out.println(s1.toUpperCase());
         // System.out.println(s1.equals(s2));
-        System.out.println(s1.compareTo(s2)); //K-H = 3
+        // System.out.println(s1.compareTo(s2)); //K-H = 3
         // System.out.println(s1.contains("Mandal"));
         // System.out.println(s1.startsWith("Kaushik"));
+        System.out.println(s1.concat(s2));
     }
 
     public static int compareTo(String s1, String s2){
         System.out.println(s1 + ", " + s2);
         return -1;
+    }
+
+    public static void plus() {
+        String s1 = "Kaushik";
+        String s2 = "Mandal";
+        String s3 = s1 + s2;
+        System.out.println(s3);
     }
 
     public static void main(String[] args) {
@@ -102,6 +110,7 @@ public class lec_28 {
         // countVowels();
         // isPalindrome();
         // builtInMethods();
-        compareTo("Kaushik", "Hello");
+        // compareTo("Kaushik", "Hello");
+        plus();
     }
 }
