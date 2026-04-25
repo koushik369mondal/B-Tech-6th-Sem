@@ -108,6 +108,12 @@ public class lec_28 {
         System.out.println(10 + " Kaushik " + 20);
     }
 
+    public static void intToString() {
+        int n = 123;
+        String s = Integer.toString(n);
+        System.out.println(s);
+    }
+
     public static void main(String[] args) {
         // test1();
         // test2();
@@ -116,6 +122,7 @@ public class lec_28 {
         // isPalindrome();
         // builtInMethods();
         // compareTo("Kaushik", "Hello");
-        plus();
+        // plus();
+        intToString();
     }
 }
