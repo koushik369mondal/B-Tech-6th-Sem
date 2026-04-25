@@ -38,10 +38,10 @@ public class lec_28 {
     // count the number of vowels in a string
     public static void countVowels() {
         Scanner sc = new Scanner(System.in);
-        String s = sc.nextLine();
+        String s = sc.nextLine(); // read a line of input from the user
         int count = 0;
         for(int i=0; i<s.length(); i++){
-            char ch = s.charAt(i);
+            char ch = s.charAt(i); // get the character at index i
             if(ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' ||
                 ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
                 count++;
@@ -51,10 +51,35 @@ public class lec_28 {
         sc.close();
     }
 
+    // Palindrome String - Two Pointer Approach
+    public static void isPalindrome() {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int left = 0;
+        int right = s.length() - 1;
+        boolean isPalindrome = true;
+        while (left < right) {
+            if (s.charAt(left) != s.charAt(right)) {
+                isPalindrome = false;
+                break;
+            }
+            left++;
+            right--;
+        }
+        if (isPalindrome) {
+            System.out.println("Palindrome.");
+        } else {
+            System.out.println("Not a palindrome.");
+        }
+        sc.close();
+    }
+
+
     public static void main(String[] args) {
         // test1();
         // test2();
         // test3();
-        countVowels();
+        // countVowels();
+        isPalindrome();
     }
 }
