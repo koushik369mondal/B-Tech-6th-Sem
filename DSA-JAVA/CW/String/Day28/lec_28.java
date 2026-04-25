@@ -76,8 +76,23 @@ public class lec_28 {
 
     // built in methods
     public static void builtInMethods(){
-        String s1 = "kaushik";
-        System.out.println(s1.indexOf('k'));
+        String s1 = "Kaushik Mandal";
+        String s2 = "Hello Guys";
+        // System.out.println(s1.indexOf('k'));
+        // System.out.println(s1.length());
+        // System.out.println(s1.charAt(0));
+        // System.out.println(s1.substring(0, 3));
+        // System.out.println(s1.toLowerCase());
+        // System.out.println(s1.toUpperCase());
+        // System.out.println(s1.equals(s2));
+        System.out.println(s1.compareTo(s2)); //K-H = 3
+        // System.out.println(s1.contains("Mandal"));
+        // System.out.println(s1.startsWith("Kaushik"));
+    }
+
+    public static int compareTo(String s1, String s2){
+        System.out.println(s1 + ", " + s2);
+        return -1;
     }
 
     public static void main(String[] args) {
@@ -86,6 +101,7 @@ public class lec_28 {
         // test3();
         // countVowels();
         // isPalindrome();
-        builtInMethods();
+        // builtInMethods();
+        compareTo("Kaushik", "Hello");
     }
 }

@@ -7,6 +7,7 @@ public class ass6 {
         // canYouReadThis();
         // stringCompression1();
         // stringCompression2();
+        removeDuplicates();
     }
 
     // Can You Read This?
@@ -62,6 +63,19 @@ public class ass6 {
                 System.out.print(s.charAt(i));
             }
             i += (count - 1);
+        }
+        sc.close();
+    }
+
+    // Strings-Remove Duplicates
+    public static void removeDuplicates() {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        System.out.print(s.charAt(0));
+        for (int i = 1; i < s.length(); i++) {
+            if (s.charAt(i) != s.charAt(i - 1)) {
+                System.out.print(s.charAt(i));
+            }
         }
         sc.close();
     }
