@@ -114,6 +114,14 @@ public class lec_28 {
         System.out.println(s);
     }
 
+    public static void countDigits() {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        String s = "" + n;
+        System.out.println(s.length());
+        sc.close();
+    }
+
     public static void main(String[] args) {
         // test1();
         // test2();
@@ -123,6 +131,7 @@ public class lec_28 {
         // builtInMethods();
         // compareTo("Kaushik", "Hello");
         // plus();
-        intToString();
+        // intToString();
+        countDigits();
     }
 }
