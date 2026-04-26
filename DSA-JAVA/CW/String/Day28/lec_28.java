@@ -185,6 +185,14 @@ public class lec_28 {
         sb.append(" Mandal");
         System.out.println(sb);
         System.out.println(sb.capacity() + ", " + sb.length());
+        sb.setCharAt(1, 'o');
+        System.out.println(sb);
+    }
+
+    public static void reverseSb() {
+        StringBuilder sb = new StringBuilder("Kaushik");
+        sb.reverse();
+        System.out.println(sb);
     }
 
     public static void main(String[] args) {
@@ -204,6 +212,7 @@ public class lec_28 {
         // interningView();
         // equal();
         // equals("Kaushik", "Kaushik");
-        stringBuilder();
+        // stringBuilder();
+        reverseSb();
     }
 }
