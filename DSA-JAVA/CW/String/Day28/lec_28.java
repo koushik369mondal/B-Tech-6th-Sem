@@ -181,9 +181,10 @@ public class lec_28 {
     }
 
     public static void stringBuilder() {
-        StringBuilder sb = new StringBuilder("Kaushik");
+        StringBuilder sb = new StringBuilder(6);
         sb.append(" Mandal");
         System.out.println(sb);
+        System.out.println(sb.capacity() + ", " + sb.length());
     }
 
     public static void main(String[] args) {
