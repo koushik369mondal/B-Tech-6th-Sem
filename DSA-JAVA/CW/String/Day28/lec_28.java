@@ -180,6 +180,12 @@ public class lec_28 {
         return true;
     }
 
+    public static void stringBuilder() {
+        StringBuilder sb = new StringBuilder("Kaushik");
+        sb.append(" Mandal");
+        System.out.println(sb);
+    }
+
     public static void main(String[] args) {
         // test1();
         // test2();
@@ -196,6 +202,7 @@ public class lec_28 {
         // sumOfSubstrings();
         // interningView();
         // equal();
-        equals("Kaushik", "Kaushik");
+        // equals("Kaushik", "Kaushik");
+        stringBuilder();
     }
 }
