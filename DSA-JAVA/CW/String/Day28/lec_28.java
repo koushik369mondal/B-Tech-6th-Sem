@@ -172,6 +172,14 @@ public class lec_28 {
         System.out.println(s1.equals(s2)); // true
     }
 
+    public static boolean equals(String s1, String s2) {
+        if(s1.length() != s2.length()) return false;
+        for(int i=0; i<s1.length(); i++) {
+            if(s1.charAt(i) != s2.charAt(i)) return false;
+        }
+        return true;
+    }
+
     public static void main(String[] args) {
         // test1();
         // test2();
@@ -187,6 +195,7 @@ public class lec_28 {
         // subStringOfString();
         // sumOfSubstrings();
         // interningView();
-        equal();
+        // equal();
+        equals("Kaushik", "Kaushik");
     }
 }
