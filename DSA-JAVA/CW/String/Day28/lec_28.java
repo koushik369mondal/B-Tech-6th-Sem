@@ -160,8 +160,16 @@ public class lec_28 {
 
     public static void interningView() {
         String s = "Kaushik";
+        // s = "Mandal";
         s += " Mandal";
         System.out.println(s);
+    }
+
+    public static void equal() {
+        String s1 = "Kaushik";
+        String s2 = new String("Kaushik");
+        System.out.println(s1 == s2); // false
+        System.out.println(s1.equals(s2)); // true
     }
 
     public static void main(String[] args) {
@@ -178,6 +186,7 @@ public class lec_28 {
         // stringToCharArray();
         // subStringOfString();
         // sumOfSubstrings();
-        interningView();
+        // interningView();
+        equal();
     }
 }
