@@ -143,19 +143,25 @@ public class lec_28 {
         sc.close();
     }
 
-    // HW - Sum of all subbstring of a number
+    // HW - Sum of all subbstring of a number - eg. 123 -> 1 + 2 + 3 + 12 + 23 + 123 = 164
     public static void sumOfSubstrings() {
-            Scanner sc = new Scanner(System.in);
-            String s = sc.nextLine();
-            int sum = 0;
-            for (int i=0; i<s.length(); i++) {
-                for (int j=i+1; j<=s.length(); j++) {
-                    String sub = s.substring(i, j);
-                    sum += Integer.parseInt(sub);
-                }
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int sum = 0;
+        for (int i=0; i<s.length(); i++) {
+            for (int j=i+1; j<=s.length(); j++) {
+                String sub = s.substring(i, j);
+                sum += Integer.parseInt(sub);
             }
-            System.out.println(sum);
-            sc.close();
+        }
+        System.out.println(sum);
+        sc.close();
+    }
+
+    public static void interningView() {
+        String s = "Kaushik";
+        s += " Mandal";
+        System.out.println(s);
     }
 
     public static void main(String[] args) {
@@ -170,6 +176,8 @@ public class lec_28 {
         // intToString();
         // countDigits();
         // stringToCharArray();
-        subStringOfString();
+        // subStringOfString();
+        // sumOfSubstrings();
+        interningView();
     }
 }
