@@ -79,4 +79,34 @@ public class ass6 {
         }
         sc.close();
     }
+
+    // Form Biggest Number
+    public static void formBiggestNumber() {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while (t > 0) {
+            int n = sc.nextInt();
+            String arr[] = new String[n];
+            for (int i = 0; i < n; i++) {
+                arr[i] = sc.next();
+            }
+            for (int i = 0; i < n - 1; i++) {
+                for (int j = 0; j < n - i - 1; j++) {
+                    String XY = arr[j] + arr[j + 1];
+                    String YX = arr[j + 1] + arr[j];
+                    if (YX.compareTo(XY) > 0) {
+                        String temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            for (int i = 0; i < n; i++) {
+                System.out.print(arr[i]);
+            }
+            System.out.println();
+            t--;
+        }
+        sc.close();
+    }
 }

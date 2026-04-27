@@ -217,6 +217,27 @@ public class lec_28 {
         return true;
     }
 
+    // most frequent character 
+    public static void MostOccuringChar(String s) {
+        int n = s.length();
+        int maxFreq = -1;
+        char ans = ' ';
+        for(int i=0; i<n; i++) {
+            char ch = s.charAt(i);
+            int count = 0;
+            for(int j=0; j<n; j++) {
+                if(s.charAt(j) == ch) {
+                    count++;
+                }
+            }
+            if(count > maxFreq) {
+                maxFreq = count;
+                ans = ch;
+            }
+        }
+        System.out.println(ans);
+    }
+
     public static void main(String[] args) {
         // test1();
         // test2();
